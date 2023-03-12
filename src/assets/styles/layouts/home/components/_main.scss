@@ -24,8 +24,7 @@ main section > h2 > i {
     padding: 10px;
 }
 
-main section > h3,
-main section > h4 {
+main section > h3 {
     /* clearfix hack */
     content: "";
     clear: both;
@@ -35,4 +34,14 @@ main section > h4 {
 main a.term {
     text-decoration: underline dotted;
     color: $color-bg1;
+}
+
+main .gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 5vw);
+}
+
+main .gallery figure {
+    width: 100%;
 }

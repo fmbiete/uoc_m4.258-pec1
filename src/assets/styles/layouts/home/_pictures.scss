@@ -1,7 +1,35 @@
-picture.left {
-    float: left;
+figure {
+    display: table;
+    width: 30%;
+    border: thin $uoc-masterbrand solid;
+    border-bottom: none;
+    margin: 0.5em;
+    margin-bottom: 0;
+    padding: 0.5em;
+    padding-bottom: 0;   
 }
 
+figure.left,
+picture.left {
+    float: left;
+    margin-left: 0;
+}
+
+figure.right,
 picture.right {
     float: right;
+    margin-right: 0;
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    font-size: small;
+    padding-left: 0.5em;
+    border: thin $uoc-masterbrand solid;
+    border-top: none;
 }

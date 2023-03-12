@@ -1,6 +1,13 @@
 main {
-    margin-top: 100px;
+    margin-top: $header-height-desktop;
     padding: 2rem;
+}
+
+main section::after {
+    /* clearfix hack */
+    content: "";
+    clear: both;
+    display: table;
 }
 
 main section > h2 {
@@ -15,4 +22,17 @@ main section > h2 > i {
     background-color: $color-bg1;
     color: $color-bg4;
     padding: 10px;
+}
+
+main section > h3,
+main section > h4 {
+    /* clearfix hack */
+    content: "";
+    clear: both;
+    display: table;
+}
+
+main a.term {
+    text-decoration: underline dotted;
+    color: $color-bg1;
 }

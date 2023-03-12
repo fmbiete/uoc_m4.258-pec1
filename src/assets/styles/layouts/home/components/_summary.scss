@@ -24,14 +24,13 @@
 }
 
 .summary-container figure {
-  margin: 0;
+  width: 100%;
+  border: none;
   margin-bottom: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid $uoc-masterbrand;
 }
 
-.summary-container figure img {
-  max-width: 240px;
+.summary-container figcaption {
+  border: none;
 }
 
 .summary-container dl {

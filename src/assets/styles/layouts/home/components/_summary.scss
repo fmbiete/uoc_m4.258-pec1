@@ -11,13 +11,9 @@
   line-height: normal;
 }
 
-.summary-container h1,
-.summary-container h2,
-.summary-container h3 {
-  text-align: center;
-}
-
 .summary-container>section>h3 {
+  width: 100%;
+  text-align: center;
   background-color: $color-bg4;
   color: $color-bg1;
   padding: 5px 0;

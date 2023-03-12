@@ -1,0 +1,46 @@
+section.footnotes {
+    font-size: smaller;
+}
+
+section.footnotes > ol {
+    list-style-type: none;
+    padding: 0;
+    counter-reset: item-li;
+}
+
+section.footnotes > ol > li {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .5em 0;
+    background: $color-bg4;
+    text-decoration: none;
+    border-radius: .3em;
+} 
+
+section.footnotes > ol > li::before {
+    content: counter(item-li);
+    counter-increment: item-li;
+    position: absolute;
+    left: -1.3em;
+    margin-top: -0.5em;
+    background: $color-bg1;
+    color: $color-text-contrast;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid $color-text-contrast;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+}
+
+section.footnotes > ol > li:hover::before {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}

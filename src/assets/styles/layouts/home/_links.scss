@@ -1,0 +1,13 @@
+a {
+    text-decoration: none;
+    color: $link-internal;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a[target="_blank"] {
+    color: $link-external;
+    text-decoration: underline;
+}

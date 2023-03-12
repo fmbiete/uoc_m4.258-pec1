@@ -1,12 +1,15 @@
 figure {
     display: table;
     width: 30%;
-    border: thin $uoc-masterbrand solid;
-    border-bottom: none;
     margin: 0.5em;
     margin-bottom: 0;
     padding: 0.5em;
-    padding-bottom: 0;   
+    padding-bottom: 0;
+    background-color: $figures-background-color;
+    border: thin $uoc-masterbrand solid;
+    border-bottom: none;
+    border-top-left-radius: $figures-border-radius;
+    border-top-right-radius: $figures-border-radius;
 }
 
 figure.left,
@@ -29,7 +32,11 @@ figcaption {
     display: table-caption;
     caption-side: bottom;
     font-size: small;
+    text-align: center;
     padding-left: 0.5em;
+    background-color: $figures-background-color;
     border: thin $uoc-masterbrand solid;
     border-top: none;
+    border-bottom-left-radius: $figures-border-radius;
+    border-bottom-right-radius: $figures-border-radius;
 }

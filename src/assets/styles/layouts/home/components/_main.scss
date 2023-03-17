@@ -12,7 +12,7 @@ main section::after {
     /* clearfix hack */
     content: "";
     clear: both;
-    // display: table;
+    display: table;
 }
 
 main section > h2 {
@@ -40,7 +40,7 @@ main section > h3 {
     /* clearfix hack */
     content: "";
     clear: both;
-    // display: table;
+    display: table;
 }
 
 main a.term {

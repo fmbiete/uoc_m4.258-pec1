@@ -34,14 +34,19 @@
     
 }
 
+.header-title {
+    width: 100%;
 
-.header-title h1 {
-    text-align: center;
-    color: $uoc-corporate;
-    margin: 0 0 10px 0;
-
-    // function
-    font-size: calc(24px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    h1 {
+        text-align: center;
+        color: $uoc-corporate;
+        margin: 0 0 10px 0;
+        line-height: 1em;
+    
+        // function
+        font-size: calc(24px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    }
+    
 }
 
 @media only screen and (min-width: $desktop-min-width) {
@@ -71,6 +76,7 @@
 
 @media only screen and (min-width: $desktop-min-width) {
     .header-github {
+        position: relative;
         font-size: 50px;
         margin: 0.3em 0.4em 0 0;
     }

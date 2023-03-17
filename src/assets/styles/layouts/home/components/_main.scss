@@ -39,33 +39,3 @@ main {
         }
     }
 }
-
-
-a.term {
-    text-decoration: underline dotted;
-    color: $color-bg1;
-}
-
-.gallery {
-    display: flex;
-    flex-direction: column;
-
-    figure {
-        width: 100%;
-        margin-bottom: 0.5em;
-    }
-}
-
-
-@media only screen and (min-width: $desktop-min-width) {
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(5, 5vw);
-
-        figure {
-            margin-bottom: 0;
-        }
-    }
-
-}

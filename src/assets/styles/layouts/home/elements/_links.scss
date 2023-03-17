@@ -11,3 +11,8 @@ a[target="_blank"] {
     color: $link-external;
     text-decoration: underline;
 }
+
+a.term {
+    text-decoration: underline dotted;
+    color: $color-bg1;
+}

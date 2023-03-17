@@ -1,10 +1,11 @@
 section.footnotes {
     font-size: smaller;
+    margin-left: 10px;
 }
 
 section.footnotes > ol {
     list-style-type: none;
-    padding: 0;
+    padding: 0;// main section > h4 {
     counter-reset: item-li;
 }
 

@@ -1,8 +1,7 @@
 figure {
     display: table;
-    width: 30%;
-    margin: 0.5em;
-    margin-bottom: 0;
+    width: 100%;
+    margin: 0;
     padding: 0.5em;
     padding-bottom: 0;
     background-color: $figures-background-color;
@@ -12,16 +11,33 @@ figure {
     border-top-right-radius: $figures-border-radius;
 }
 
+@media only screen and (min-width: $desktop-min-width) {
+    figure {
+        width: 30%;
+        margin: 0.5em;
+        margin-bottom: 0;
+    }
+}
+
 figure.left,
 picture.left {
-    float: left;
-    margin-left: 0;
+    float: none;
 }
 
 figure.right,
 picture.right {
-    float: right;
-    margin-right: 0;
+    float: none;
+}
+
+@media only screen and (min-width: $desktop-min-width) {
+    figure.left {
+        float: left;
+        margin-left: 0;
+    }
+    figure.right {
+        float: right;
+        margin-right: 0;
+    }
 }
 
 figure img {

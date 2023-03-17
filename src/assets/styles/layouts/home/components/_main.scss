@@ -1,20 +1,32 @@
 main {
-    margin-top: $header-height-desktop;
-    padding: 2rem;
+    margin: $header-height-mobile 10px 10px 10px;
+}
+
+@media only screen and (min-width: $desktop-min-width) {
+    main {
+        margin-top: $header-height-desktop;
+    }
 }
 
 main section::after {
     /* clearfix hack */
     content: "";
     clear: both;
-    display: table;
+    // display: table;
 }
 
 main section > h2 {
-    text-align: left;
-    margin-top: 2em;
+    text-align: center;
+    margin-top: 1em;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid $uoc-masterbrand;
+}
+
+@media only screen and (min-width: $desktop-min-width) {
+    main section > h2 {
+        text-align: left;
+        margin-top: 2em;
+    }
 }
 
 main section > h2 > i {
@@ -28,7 +40,7 @@ main section > h3 {
     /* clearfix hack */
     content: "";
     clear: both;
-    display: table;
+    // display: table;
 }
 
 main a.term {
@@ -37,9 +49,24 @@ main a.term {
 }
 
 main .gallery {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 5vw);
+    display: flex;
+    flex-direction: column;
+}
+
+main .gallery figure {
+    margin-bottom: 0.5em;
+}
+
+@media only screen and (min-width: $desktop-min-width) {
+    main .gallery {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 5vw);
+    }
+
+    main .gallery figure {
+        margin-bottom: 0;
+    }
 }
 
 main .gallery figure {

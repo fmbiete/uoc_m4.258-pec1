@@ -1,4 +1,9 @@
 {
   "extends": ["stylelint-config-recommended-scss"],
-  "rules": {}
+  "plugins": [
+    "@namics/stylelint-bem"
+  ],
+  "rules": {
+    "plugin/stylelint-bem-namics": true
+  }
 }

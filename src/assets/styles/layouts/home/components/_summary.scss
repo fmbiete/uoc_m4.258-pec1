@@ -1,4 +1,4 @@
-.summary-container {
+.o-summary-container {
   max-width: 75%;
   margin: auto;
   margin-bottom: 2em;
@@ -53,7 +53,7 @@
 }
 
 @media only screen and (min-width: $desktop-min-width) {
-  .summary-container {
+  .o-summary-container {
       float: right;
       max-width: 300px;
       margin-bottom: 0;

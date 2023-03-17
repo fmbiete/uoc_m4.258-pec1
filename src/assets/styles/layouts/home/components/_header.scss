@@ -1,4 +1,4 @@
-.header-container {
+.l-header-container {
     position: fixed;
     background-color: $color-bg3;
     width: 100%;
@@ -9,13 +9,13 @@
 }
 
 @media only screen and (min-width: $desktop-min-width) {
-    .header-container {
+    .l-header-container {
         flex-direction: row;
     }
 }
 
 
-.header-logo {
+.a-header-logo {
     margin-left: 0em;
 
     picture > img {
@@ -24,7 +24,7 @@
 }
 
 @media only screen and (min-width: $desktop-min-width) {
-    .header-logo {
+    .a-header-logo {
         margin-left: 2em;
 
         picture > img {
@@ -34,7 +34,7 @@
     
 }
 
-.header-title {
+.a-header-title {
     width: 100%;
 
     h1 {
@@ -50,7 +50,7 @@
 }
 
 @media only screen and (min-width: $desktop-min-width) {
-    .header-title {
+    .a-header-title {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -61,7 +61,7 @@
     }
 }
 
-.header-github {
+.a-header-github {
     position: absolute;
     top: 0;
     right: 0;
@@ -75,7 +75,7 @@
 }
 
 @media only screen and (min-width: $desktop-min-width) {
-    .header-github {
+    .a-header-github {
         position: relative;
         font-size: 50px;
         margin: 0.3em 0.4em 0 0;

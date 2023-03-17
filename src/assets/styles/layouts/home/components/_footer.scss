@@ -1,4 +1,4 @@
-.footer {
+.o-footer {
     margin: 0;
     font-size: 0.75rem;
     text-align: center;
@@ -9,5 +9,11 @@
     a {
         color: $color-contrast-light;
     }
+}
+
+.o-footer__author {
+    margin-top: 5px;
+    font-size: larger;
+    font-weight: bold;
 }
 

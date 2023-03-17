@@ -37,20 +37,20 @@ figure {
 }
 
 
-figure.left {
+figure.h-left {
     float: none;
 }
 
-figure.right {
+figure.h-right {
     float: none;
 }
 
 @media only screen and (min-width: $desktop-min-width) {
-    figure.left {
+    figure.h-left {
         float: left;
         margin-left: 0;
     }
-    figure.right {
+    figure.h-right {
         float: right;
         margin-right: 0;
     }

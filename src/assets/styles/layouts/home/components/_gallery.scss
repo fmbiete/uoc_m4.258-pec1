@@ -1,4 +1,4 @@
-.gallery {
+.m-gallery {
     display: flex;
     flex-direction: column;
 
@@ -10,7 +10,7 @@
 
 
 @media only screen and (min-width: $desktop-min-width) {
-    .gallery {
+    .m-gallery {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(5, 5vw);

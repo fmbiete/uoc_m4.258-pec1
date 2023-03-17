@@ -9,6 +9,47 @@
   border-radius: 2rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
   0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+  section > h3 {
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    background-color: $color-bg4;
+    color: $color-bg1;
+  }
+
+  figure {
+    width: 100%;
+    border: none;
+    margin-bottom: 10px;
+    
+    figcaption {
+      border: none;
+    }
+  }
+
+  dl {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    line-height: 1rem;
+  
+    dt {
+      font-weight: bold;
+      flex: 0 0 30%;
+    }
+    
+    dd {
+      flex: 0 0 70%;
+      margin-left: auto;
+    }
+  }
+
+  a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: $desktop-min-width) {
@@ -21,43 +62,9 @@
   }
 }
 
-.summary-container>section>h3 {
-  width: 100%;
-  padding: 5px 0;
-  text-align: center;
-  background-color: $color-bg4;
-  color: $color-bg1;
-}
 
-.summary-container figure {
-  width: 100%;
-  border: none;
-  margin-bottom: 10px;
-}
 
-.summary-container figcaption {
-  border: none;
-}
 
-.summary-container dl {
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-  line-height: 1rem;
-}
 
-.summary-container dt {
-  font-weight: bold;
-  flex: 0 0 30%;
-}
 
-.summary-container dd {
-  flex: 0 0 70%;
-  margin-left: auto;
-}
 
-.summary-container a {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-}

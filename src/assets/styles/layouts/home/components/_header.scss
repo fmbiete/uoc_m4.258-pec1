@@ -14,25 +14,28 @@
     }
 }
 
+
 .header-logo {
     margin-left: 0em;
-}
 
-.header-logo picture > img {
-    max-width: 300px;
+    picture > img {
+        max-width: 300px;
+    }
 }
 
 @media only screen and (min-width: $desktop-min-width) {
     .header-logo {
         margin-left: 2em;
+
+        picture > img {
+            max-width: 300px;
+        }
     }
     
-    .header-logo picture > img {
-        max-width: 300px;
-    }
 }
 
-.header-container h1 {
+
+.header-title h1 {
     text-align: center;
     // line-height: 1em;
     color: $uoc-corporate;
@@ -45,30 +48,30 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    }
 
-    .header-container h1 {
-        font-size: 50px;
-        margin: 0;
+        h1 {
+            font-size: 50px;
+            margin: 0;
+        }
     }
 }
 
-.header-container .github {
+.header-github {
     position: absolute;
     top: 0;
     right: 0;
     font-size: 40px;
     margin: 0.2em 0.2em 0 0;
-}
 
-@media only screen and (min-width: $desktop-min-width) {
-    .header-container .github {
-        font-size: 50px;
-        margin: 0.3em 0.4em 0 0;
+    a {
+        color: $color-text;
+        text-decoration: none;
     }
 }
 
-.header-container .github a {
-    color: $color-text;
-    text-decoration: none;
+@media only screen and (min-width: $desktop-min-width) {
+    .header-github {
+        font-size: 50px;
+        margin: 0.3em 0.4em 0 0;
+    }
 }

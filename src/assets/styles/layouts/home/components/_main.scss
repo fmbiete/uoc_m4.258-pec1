@@ -1,74 +1,76 @@
 main {
     margin: $header-height-mobile 10px 10px 10px;
+
+    section::after {
+        /* clearfix hack */
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    section {
+        h2 {
+            text-align: center;
+            margin-top: 1em;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid $uoc-masterbrand;
+
+            i {
+                border-radius: 2em;
+                background-color: $color-bg1;
+                color: $color-bg4;
+                padding: 10px;
+            }
+        }
+
+        h3 {
+            /* clearfix hack */
+            content: "";
+            clear: both;
+            display: table;
+        }
+    }
 }
 
 @media only screen and (min-width: $desktop-min-width) {
     main {
         margin-top: $header-height-desktop;
+
+        section {
+            h2 {
+                text-align: left;
+                margin-top: 2em;
+            }
+        }
     }
 }
 
-main section::after {
-    /* clearfix hack */
-    content: "";
-    clear: both;
-    display: table;
-}
 
-main section > h2 {
-    text-align: center;
-    margin-top: 1em;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid $uoc-masterbrand;
-}
-
-@media only screen and (min-width: $desktop-min-width) {
-    main section > h2 {
-        text-align: left;
-        margin-top: 2em;
-    }
-}
-
-main section > h2 > i {
-    border-radius: 2em;
-    background-color: $color-bg1;
-    color: $color-bg4;
-    padding: 10px;
-}
-
-main section > h3 {
-    /* clearfix hack */
-    content: "";
-    clear: both;
-    display: table;
-}
-
-main a.term {
+a.term {
     text-decoration: underline dotted;
     color: $color-bg1;
 }
 
-main .gallery {
+.gallery {
     display: flex;
     flex-direction: column;
+
+    figure {
+        width: 100%;
+        margin-bottom: 0.5em;
+    }
 }
 
-main .gallery figure {
-    margin-bottom: 0.5em;
-}
 
 @media only screen and (min-width: $desktop-min-width) {
-    main .gallery {
+    .gallery {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(5, 5vw);
+
+        figure {
+            margin-bottom: 0;
+        }
     }
 
-    main .gallery figure {
-        margin-bottom: 0;
-    }
-}
-
-main .gallery figure {
-    width: 100%;
 }

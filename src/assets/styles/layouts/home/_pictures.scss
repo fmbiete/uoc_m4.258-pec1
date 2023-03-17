@@ -9,6 +9,23 @@ figure {
     border-bottom: none;
     border-top-left-radius: $figures-border-radius;
     border-top-right-radius: $figures-border-radius;
+    
+    img {
+        width: 100%;
+    }
+
+    figcaption {
+        display: table-caption;
+        caption-side: bottom;
+        font-size: small;
+        text-align: center;
+        padding-left: 0.5em;
+        background-color: $figures-background-color;
+        border: thin $uoc-masterbrand solid;
+        border-top: none;
+        border-bottom-left-radius: $figures-border-radius;
+        border-bottom-right-radius: $figures-border-radius;
+    }
 }
 
 @media only screen and (min-width: $desktop-min-width) {
@@ -19,13 +36,12 @@ figure {
     }
 }
 
-figure.left,
-picture.left {
+
+figure.left {
     float: none;
 }
 
-figure.right,
-picture.right {
+figure.right {
     float: none;
 }
 
@@ -38,21 +54,4 @@ picture.right {
         float: right;
         margin-right: 0;
     }
-}
-
-figure img {
-    width: 100%;
-}
-
-figcaption {
-    display: table-caption;
-    caption-side: bottom;
-    font-size: small;
-    text-align: center;
-    padding-left: 0.5em;
-    background-color: $figures-background-color;
-    border: thin $uoc-masterbrand solid;
-    border-top: none;
-    border-bottom-left-radius: $figures-border-radius;
-    border-bottom-right-radius: $figures-border-radius;
 }

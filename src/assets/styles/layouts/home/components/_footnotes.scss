@@ -1,4 +1,4 @@
-section.o-footnotes {
+.o-footnotes {
     font-size: smaller;
     margin-left: 10px;
 
@@ -15,28 +15,28 @@ section.o-footnotes {
             background: $color-bg4;
             text-decoration: none;
             border-radius: .3em;
+
+            &:before {
+                content: counter(item-li);
+                counter-increment: item-li;
+                position: absolute;
+                left: -1.3em;
+                margin-top: -0.5em;
+                background: $color-bg1;
+                color: $color-text-contrast;
+                height: 2em;
+                width: 2em;
+                line-height: 2em;
+                border: .3em solid $color-text-contrast;
+                text-align: center;
+                font-weight: bold;
+                border-radius: 2em;
+            }
+
+            &:hover::before {
+                animation: spin 1s linear infinite;
+            }
         } 
-        
-        li::before {
-            content: counter(item-li);
-            counter-increment: item-li;
-            position: absolute;
-            left: -1.3em;
-            margin-top: -0.5em;
-            background: $color-bg1;
-            color: $color-text-contrast;
-            height: 2em;
-            width: 2em;
-            line-height: 2em;
-            border: .3em solid $color-text-contrast;
-            text-align: center;
-            font-weight: bold;
-            border-radius: 2em;
-        }
-        
-        li:hover::before {
-            animation: spin 1s linear infinite;
-        }
     }
 }
 

@@ -1,11 +1,11 @@
 .m-gallery {
     display: flex;
     flex-direction: column;
+}
 
-    figure {
-        width: 100%;
-        margin-bottom: 0.5em;
-    }
+.m-gallery__figure {
+    width: 100%;
+    margin-bottom: 0.5em;
 }
 
 
@@ -14,10 +14,10 @@
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(5, 5vw);
+    }
 
-        figure {
-            margin-bottom: 0;
-        }
+    .m-gallery__figure {
+        margin-bottom: 0;
     }
 
 }

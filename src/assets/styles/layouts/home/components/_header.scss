@@ -15,7 +15,7 @@
 }
 
 
-.a-header-logo {
+.o-header__logo {
     margin-left: 0em;
 
     picture > img {
@@ -24,7 +24,7 @@
 }
 
 @media only screen and (min-width: $desktop-min-width) {
-    .a-header-logo {
+    .o-header__logo {
         margin-left: 2em;
 
         picture > img {
@@ -34,7 +34,7 @@
     
 }
 
-.a-header-title {
+.o-header__title {
     width: 100%;
 
     h1 {
@@ -50,7 +50,7 @@
 }
 
 @media only screen and (min-width: $desktop-min-width) {
-    .a-header-title {
+    .o-header__title {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -61,7 +61,7 @@
     }
 }
 
-.a-header-github {
+.o-header__github {
     position: absolute;
     top: 0;
     right: 0;
@@ -75,7 +75,7 @@
 }
 
 @media only screen and (min-width: $desktop-min-width) {
-    .a-header-github {
+    .o-header__github {
         position: relative;
         font-size: 50px;
         margin: 0.3em 0.4em 0 0;

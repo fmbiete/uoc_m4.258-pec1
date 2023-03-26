@@ -1,3 +1,7 @@
+/*------------------------------------*\
+  # Links
+\*------------------------------------*/
+
 a {
     text-decoration: none;
     color: $link-internal;
@@ -12,6 +16,7 @@ a[target="_blank"] {
     text-decoration: underline;
 }
 
+/* Special case of link to word definition */
 a.h-term {
     text-decoration: underline dotted;
     color: $color-bg1;

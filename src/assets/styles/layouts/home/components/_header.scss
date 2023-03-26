@@ -1,3 +1,8 @@
+/*------------------------------------*\
+  # Header
+\*------------------------------------*/
+
+/* Fixed top container */
 .l-header-container {
     position: fixed;
     background-color: $color-bg3;
@@ -15,6 +20,7 @@
 }
 
 
+/* Main logo for the page */
 .o-header__logo {
     margin-left: 0em;
 
@@ -34,6 +40,7 @@
     
 }
 
+/* Main title for the page */
 .o-header__title {
     width: 100%;
 
@@ -61,6 +68,7 @@
     }
 }
 
+/* Github link placeholder for the code */
 .o-header__github {
     position: absolute;
     top: 0;

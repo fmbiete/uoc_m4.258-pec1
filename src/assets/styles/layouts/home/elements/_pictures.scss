@@ -1,3 +1,7 @@
+/*------------------------------------*\
+  # Figures
+\*------------------------------------*/
+
 figure {
     display: table;
     width: 100%;
@@ -36,11 +40,12 @@ figure {
     }
 }
 
-
+/* Helper to place images at the left of the content */
 figure.h-left {
     float: none;
 }
 
+/* Helper to place images at the right of the content */
 figure.h-right {
     float: none;
 }

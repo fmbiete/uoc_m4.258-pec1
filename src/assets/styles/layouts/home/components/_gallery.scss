@@ -1,8 +1,13 @@
+/*------------------------------------*\
+  # Gallery
+\*------------------------------------*/
+
 .m-gallery {
     display: flex;
     flex-direction: column;
 }
 
+/* Each of the figures in the component */
 .m-gallery__figure {
     width: 100%;
     margin-bottom: 0.5em;

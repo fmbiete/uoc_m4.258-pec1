@@ -1,7 +1,13 @@
+/*------------------------------------*\
+  # Main
+\*------------------------------------*/
+
 main {
     margin: $header-height-mobile 10px 10px 10px;
 
+    /* Each of the sections */
     section {
+        // reset float from images above
         @include clearfix();
 
         h2 {
@@ -19,6 +25,7 @@ main {
         }
 
         h3 {
+            // reset float from images above
             @include clearfix();
         }
     }
@@ -37,6 +44,7 @@ main {
     }
 }
 
+/* Special layout modification to increase vertical margin */
 .l-main--more-v-margin {
     margin-top: 1em;
 }

@@ -3,7 +3,16 @@
 \*------------------------------------*/
 
 main {
+    display: flex;
+    flex-direction: column;
+
     margin: $header-height-mobile 10px 10px 10px;
+
+    header {
+        display: flex; 
+        flex-direction: column-reverse;
+        row-gap: 50px;
+    }
 
     /* Each of the sections */
     section {
@@ -33,7 +42,18 @@ main {
 
 @media only screen and (min-width: $desktop-min-width) {
     main {
+        flex-direction: column; 
+
+        width: 70%; 
+        
+        margin: auto;
         margin-top: $header-height-desktop;
+
+        header {
+            display: flex; 
+            flex-direction: row-reverse;
+            row-gap: 0;
+        }
 
         section {
             h2 {
@@ -41,6 +61,18 @@ main {
                 margin-top: 2em;
             }
         }
+    }
+}
+
+.o-main__introduction {
+    // line-height: 1;
+}
+
+@media only screen and (min-width: $desktop-min-width) {
+    .o-main__introduction {
+        flex-grow: 3;
+        font-size: x-large;
+        line-height: 2;
     }
 }
 

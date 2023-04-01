@@ -17,6 +17,7 @@
 @media only screen and (min-width: $desktop-min-width) {
     .l-header-container {
         flex-direction: row;
+        justify-content: space-between;
     }
 }
 
@@ -26,35 +27,27 @@
     margin-left: 0em;
 
     picture > img {
-        max-width: 300px;
+        max-width: $header-logo-width;
     }
 }
 
 @media only screen and (min-width: $desktop-min-width) {
     .o-header__logo {
-        margin-left: 2em;
-
-        picture > img {
-            max-width: 300px;
-        }
+        margin-left: 0.5em;
     }
-    
 }
 
 /* Main title for the page */
 .o-header__title {
-    width: 100%;
-
-    h1 {
-        text-align: center;
-        color: $uoc-corporate;
-        margin: 0 0 10px 0;
-        line-height: 1em;
+    text-align: center;
+    color: $uoc-corporate;
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: 1em;
     
-        // function
-        font-size: calc(24px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-    }
-    
+    // function with some random values that look ok
+    // 100vw - 300px : width available - $header-logo-width from logo
+    font-size: calc(24px + (26 - 14) * ((100vw - $header-logo-width) / (1600 - 300)));
 }
 
 @media only screen and (min-width: $desktop-min-width) {
@@ -63,9 +56,7 @@
         align-items: center;
         justify-content: center;
 
-        h1 {
-            margin: 0;
-        }
+        margin-bottom: 0;
     }
 }
 
@@ -77,10 +68,9 @@
     font-size: 40px;
     margin: 0.2em 0.2em 0 0;
 
-    a {
-        color: $color-text;
-        text-decoration: none;
-    }
+    // Keep these properties even after other conflicting styles
+    color: $color-text !important;
+    text-decoration: none !important;
 }
 
 @media only screen and (min-width: $desktop-min-width) {
